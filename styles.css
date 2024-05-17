@@ -1,0 +1,154 @@
+body {
+  background: #2196f3; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f44336,
+    #2196f3
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f44336,
+    #2196f3
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.mainDiv {
+  padding: 80px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.leftDiv {
+  border-radius: 10px 0 0 10px;
+  width: 600px;
+  height: 500px;
+
+  background-color: rgba(0, 191, 255, 0.5);
+}
+
+.rightDiv {
+  border-radius: 0 10px 10px 0;
+  width: 600px;
+  height: 500px;
+  background-color: rgba(255, 0, 0, 0.5);
+}
+.btnRestart {
+  border: none;
+  position: absolute;
+  cursor: pointer;
+  border-radius: 20px;
+  background-color: white;
+
+  top: 15%;
+  width: 150px;
+  height: 30px;
+  font-weight: bold;
+  &:hover {
+    background-color: beige;
+    &:active {
+      background-color: aquamarine;
+    }
+  }
+}
+
+.score1 {
+  width: 220px;
+  height: 150px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  border-radius: 20px;
+  font-size: 20px;
+}
+
+.score2 {
+  width: 220px;
+  height: 150px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  border-radius: 20px;
+  font-size: 20px;
+}
+
+.playerCont {
+  margin-bottom: 150px;
+}
+
+.points1 {
+  font-size: 50px;
+  color: white;
+}
+
+.pointsScore1 {
+  font-size: 30px;
+}
+
+.btnRoll {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: absolute;
+  bottom: 30%;
+  justify-content: center;
+  align-items: center;
+}
+
+.diceStyle {
+  width: 150px;
+  height: 30px;
+  cursor: pointer;
+  border-radius: 20px;
+  background-color: white;
+  border: none;
+  &:hover {
+    background-color: beige;
+    &:active {
+      background-color: aquamarine;
+    }
+  }
+  font-weight: bold;
+}
+.holdStyle {
+  width: 120px;
+  height: 30px;
+  cursor: pointer;
+  border-radius: 20px;
+  background-color: white;
+  border: none;
+  &:hover {
+    background-color: beige;
+    &:active {
+      background-color: aquamarine;
+    }
+  }
+  font-weight: bold;
+}
+
+.dice {
+  position: absolute;
+  width: 100px;
+  top: 25%;
+}
+
+.hidden {
+  display: none;
+}
+
+.player--active {
+  background-color: wheat;
+}
+
+.player--winner {
+  background-color: black;
+}
